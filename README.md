@@ -169,7 +169,7 @@ Tick each topic off once you can explain it without notes. The "Must know" facts
 - [AZ-104 practice questions](https://www.savemycert.com/practice/azure-administrator-associate/?utm_source=github&utm_medium=readme&utm_campaign=az-104-study-guide): with an explanation on every option
 - [AZ-104 mock exams](https://www.savemycert.com/mocks/azure-administrator-associate/?utm_source=github&utm_medium=readme&utm_campaign=az-104-study-guide): full-length and timed
 - [AZ-104 cheat sheet](https://www.savemycert.com/cheat-sheet/azure-administrator-associate/?utm_source=github&utm_medium=readme&utm_campaign=az-104-study-guide): the key facts on one page
-- [All certification study guides](https://github.com/savemycert-sketch/certification-study-guides)
+- [All certification study guides](https://github.com/savemycert/certification-study-guides)
 
 ## Contributing
 
