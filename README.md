@@ -1,6 +1,6 @@
 # AZ-104 Study Guide: Microsoft Certified: Azure Administrator Associate
 
-A free, open study guide for the **Microsoft Certified: Azure Administrator Associate (AZ-104)** exam. It covers every domain and topic in the official exam guide as a checklist, lists the facts worth memorizing, and links each topic to a full free lesson.
+A free, open study guide for the **Microsoft Certified: Azure Administrator Associate (AZ-104)** exam: revision notes for every domain, side-by-side comparisons of commonly confused services, a glossary, 20 worked sample questions, and the official syllabus as a checklist with a full free lesson for every topic.
 
 Maintained by [SaveMyCert](https://www.savemycert.com/?utm_source=github&utm_medium=readme&utm_campaign=az-104-study-guide), where you can read every lesson free, [practice with explained questions](https://www.savemycert.com/practice/azure-administrator-associate/?utm_source=github&utm_medium=readme&utm_campaign=az-104-study-guide) and [take timed mock exams](https://www.savemycert.com/mocks/azure-administrator-associate/?utm_source=github&utm_medium=readme&utm_campaign=az-104-study-guide).
 
@@ -8,6 +8,7 @@ Maintained by [SaveMyCert](https://www.savemycert.com/?utm_source=github&utm_med
 
 - [Exam at a glance](#exam-at-a-glance)
 - [Exam domains](#exam-domains)
+- [What is in this repo](#what-is-in-this-repo)
 - [Syllabus checklist](#syllabus-checklist)
   - [Domain 1: Manage Azure identities and governance](#domain-1-manage-azure-identities-and-governance)
   - [Domain 2: Implement and manage storage](#domain-2-implement-and-manage-storage)
@@ -28,7 +29,7 @@ Maintained by [SaveMyCert](https://www.savemycert.com/?utm_source=github&utm_med
 | Time limit | 100 min |
 | Passing score | 700 / 1000 |
 | Format | Multiple choice & more |
-| Exam fee | $165 |
+| Exam fee | $165 (US; varies by country) |
 | Valid for | 1 year (free renewal) |
 
 Exam details change. Always confirm them in the official [Microsoft AZ-104 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104) from Microsoft Learn.
@@ -45,6 +46,22 @@ Exam details change. Always confirm them in the official [Microsoft AZ-104 study
 
 That is 5 domains and 15 topics. Spend your time in proportion to the weights: the heaviest domain decides more of your score than the lightest.
 
+Microsoft publishes each weight as a range (for example 25–30%). The figures here fall within those ranges, adjusted to add up to 100%.
+
+## What is in this repo
+
+| File | What it gives you |
+|---|---|
+| [Domain 1 notes](notes/domain-1-manage-azure-identities-and-governance.md) | Manage Azure identities and governance: condensed revision notes per topic |
+| [Domain 2 notes](notes/domain-2-implement-and-manage-storage.md) | Implement and manage storage: condensed revision notes per topic |
+| [Domain 3 notes](notes/domain-3-deploy-and-manage-azure-compute-resources.md) | Deploy and manage Azure compute resources: condensed revision notes per topic |
+| [Domain 4 notes](notes/domain-4-implement-and-manage-virtual-networking.md) | Implement and manage virtual networking: condensed revision notes per topic |
+| [Domain 5 notes](notes/domain-5-monitor-and-maintain-azure-resources.md) | Monitor and maintain Azure resources: condensed revision notes per topic |
+| [Commonly confused services](comparisons.md) | Side-by-side tables of the services questions set against each other |
+| [Glossary](glossary.md) | Every in-scope term and service in one sentence |
+| [Sample questions](sample-questions.md) | 20 worked questions with answers and reasoning |
+| [Exam-day guide](exam-day-guide.md) | Booking, testing options, scoring, results and retakes |
+
 ## Syllabus checklist
 
 Tick each topic off once you can explain it without notes. The "Must know" facts are the ones questions turn on. Each lesson link goes to the complete, free lesson.
@@ -53,18 +70,20 @@ Tick each topic off once you can explain it without notes. The "Must know" facts
 
 **Weight: 24%.** Microsoft Entra users and groups, access to Azure resources, and subscription-level governance. Official weighting 20–25%.
 
+📝 Revision notes: [Domain 1: Manage Azure identities and governance](notes/domain-1-manage-azure-identities-and-governance.md)
+
 - [ ] **Manage Microsoft Entra users and groups**
-  <br>Skills outline section (AZ-104, as of April 17, 2026). Creating users and groups; managing user and group properties; managing licenses in Microsoft Entra ID; managing external users; configuring self-service password reset (SSPR).
+  <br>Creating users and groups; managing user and group properties; managing licenses in Microsoft Entra ID; managing external users; configuring self-service password reset (SSPR).
   - 📖 Lesson: [Manage Microsoft Entra Users and Groups (AZ-104)](https://www.savemycert.com/revision/azure-administrator-associate/manage-entra-users-groups/?utm_source=github&utm_medium=readme&utm_campaign=az-104-study-guide)
   - Must know: Microsoft Entra ID (formerly Azure Active Directory) is Azure's cloud identity service holding all users and groups.
   - Must know: Member users are internal accounts; guest users are external collaborators invited through B2B who sign in with their own home credentials.
 - [ ] **Manage access to Azure resources**
-  <br>Skills outline section (AZ-104, as of April 17, 2026). Managing built-in Azure roles; assigning roles at different scopes; interpreting access assignments.
+  <br>Managing built-in Azure roles; assigning roles at different scopes; interpreting access assignments.
   - 📖 Lesson: [Manage Access to Azure Resources: Azure RBAC (AZ-104)](https://www.savemycert.com/revision/azure-administrator-associate/azure-rbac-role-assignments/?utm_source=github&utm_medium=readme&utm_campaign=az-104-study-guide)
   - Must know: Azure RBAC is the authorization system that controls access to Azure resources; Microsoft Entra ID handles authentication.
   - Must know: Every role assignment has three parts: a security principal (who), a role definition (what), and a scope (where).
 - [ ] **Manage Azure subscriptions and governance**
-  <br>Skills outline section (AZ-104, as of April 17, 2026). Implementing and managing Azure Policy; configuring resource locks; applying and managing tags on resources; managing resource groups and subscriptions; managing costs by using alerts, budgets, and Azure Advisor recommendations; configuring management groups.
+  <br>Implementing and managing Azure Policy; configuring resource locks; applying and managing tags on resources; managing resource groups and subscriptions; managing costs by using alerts, budgets, and Azure Advisor recommendations; configuring management groups.
   - 📖 Lesson: [Azure Subscriptions, Policy, Locks and Governance (AZ-104)](https://www.savemycert.com/revision/azure-administrator-associate/azure-subscriptions-governance-policy/?utm_source=github&utm_medium=readme&utm_campaign=az-104-study-guide)
   - Must know: The Azure hierarchy is management group → subscription → resource group → resource, and governance applied at a higher scope is inherited by everything beneath it.
   - Must know: Management groups let you assign policy and access to many subscriptions at once; moving a subscription to a new management group makes it inherit that group's governance.
@@ -73,18 +92,20 @@ Tick each topic off once you can explain it without notes. The "Must know" facts
 
 **Weight: 19%.** Storage access control, storage account configuration, and Azure Files and Blob Storage. Official weighting 15–20%.
 
+📝 Revision notes: [Domain 2: Implement and manage storage](notes/domain-2-implement-and-manage-storage.md)
+
 - [ ] **Configure access to storage**
-  <br>Skills outline section (AZ-104, as of April 17, 2026). Configuring Azure Storage firewalls and virtual networks; creating and using shared access signature (SAS) tokens; configuring stored access policies; managing access keys; configuring identity-based access for Azure Files.
+  <br>Configuring Azure Storage firewalls and virtual networks; creating and using shared access signature (SAS) tokens; configuring stored access policies; managing access keys; configuring identity-based access for Azure Files.
   - 📖 Lesson: [Configure Access to Azure Storage: SAS, Keys & Firewalls (AZ-104)](https://www.savemycert.com/revision/azure-administrator-associate/configure-azure-storage-access-sas/?utm_source=github&utm_medium=readme&utm_campaign=az-104-study-guide)
   - Must know: Storage access has two layers: networking (firewall, virtual network rules, private endpoints) and authorization (keys, SAS, Entra RBAC) — decide them separately.
   - Must know: Storage firewalls restrict access to selected virtual network subnets via service endpoints and to public IP ranges; private endpoints remove public exposure entirely.
 - [ ] **Configure and manage storage accounts**
-  <br>Skills outline section (AZ-104, as of April 17, 2026). Creating and configuring storage accounts; configuring Azure Storage redundancy; configuring object replication; configuring storage account encryption; managing data by using Azure Storage Explorer and AzCopy.
+  <br>Creating and configuring storage accounts; configuring Azure Storage redundancy; configuring object replication; configuring storage account encryption; managing data by using Azure Storage Explorer and AzCopy.
   - 📖 Lesson: [Configure & Manage Azure Storage Accounts and Redundancy (AZ-104)](https://www.savemycert.com/revision/azure-administrator-associate/configure-azure-storage-accounts-redundancy/?utm_source=github&utm_medium=readme&utm_campaign=az-104-study-guide)
   - Must know: General-purpose v2 (GPv2) is the default account kind, supporting all services and access tiers; choose Standard performance for most workloads and Premium for low-latency, high-transaction needs.
   - Must know: Every redundancy option keeps at least three copies: LRS stays in one datacenter, ZRS spans three availability zones, and GRS and GZRS add a second region.
 - [ ] **Configure Azure Files and Azure Blob Storage**
-  <br>Skills outline section (AZ-104, as of April 17, 2026). Creating and configuring a file share in Azure Files and a container in Azure Blob Storage; configuring storage tiers; configuring soft delete for blobs and containers; configuring snapshots and soft delete for Azure Files; configuring blob lifecycle management and blob versioning.
+  <br>Creating and configuring a file share in Azure Files and a container in Azure Blob Storage; configuring storage tiers; configuring soft delete for blobs and containers; configuring snapshots and soft delete for Azure Files; configuring blob lifecycle management and blob versioning.
   - 📖 Lesson: [Configure Azure Files and Azure Blob Storage (AZ-104)](https://www.savemycert.com/revision/azure-administrator-associate/configure-azure-files-blob-storage/?utm_source=github&utm_medium=readme&utm_campaign=az-104-study-guide)
   - Must know: Azure Files provides managed SMB and NFS file shares you mount like a network drive; Azure Blob Storage provides containers of block, append, and page blobs for object data.
   - Must know: Create a file share with a protocol and quota, mount SMB over port 445, and use a premium FileStorage account for NFS or low-latency workloads.
@@ -93,23 +114,25 @@ Tick each topic off once you can explain it without notes. The "Must know" facts
 
 **Weight: 24%.** ARM template and Bicep deployments, virtual machines, containers, and Azure App Service. Official weighting 20–25%.
 
+📝 Revision notes: [Domain 3: Deploy and manage Azure compute resources](notes/domain-3-deploy-and-manage-azure-compute-resources.md)
+
 - [ ] **Automate deployment of resources by using Azure Resource Manager (ARM) templates or Bicep files**
-  <br>Skills outline section (AZ-104, as of April 17, 2026). Interpreting an ARM template or a Bicep file; modifying an existing ARM template or Bicep file; deploying resources by using an ARM template or a Bicep file; exporting a deployment as an ARM template or converting an ARM template to a Bicep file.
+  <br>Interpreting an ARM template or a Bicep file; modifying an existing ARM template or Bicep file; deploying resources by using an ARM template or a Bicep file; exporting a deployment as an ARM template or converting an ARM template to a Bicep file.
   - 📖 Lesson: [ARM Templates and Bicep: AZ-104 Deployment Guide](https://www.savemycert.com/revision/azure-administrator-associate/azure-arm-templates-bicep/?utm_source=github&utm_medium=readme&utm_campaign=az-104-study-guide)
   - Must know: An ARM template is JSON with parameters, variables, resources, and outputs; parameters are supplied at deployment, outputs are returned after it.
   - Must know: Bicep is a cleaner declarative language that transpiles to ARM JSON, infers dependencies from symbolic references, and can do anything ARM JSON can.
 - [ ] **Create and configure virtual machines**
-  <br>Skills outline section (AZ-104, as of April 17, 2026). Creating a virtual machine; configuring encryption at host; moving a VM to another resource group, subscription, or region; managing VM sizes and disks; deploying VMs to availability zones and availability sets; deploying and configuring Azure Virtual Machine Scale Sets.
+  <br>Creating a virtual machine; configuring encryption at host; moving a VM to another resource group, subscription, or region; managing VM sizes and disks; deploying VMs to availability zones and availability sets; deploying and configuring Azure Virtual Machine Scale Sets.
   - 📖 Lesson: [Azure Virtual Machines: Sizes, Disks, and Zones (AZ-104)](https://www.savemycert.com/revision/azure-administrator-associate/azure-virtual-machines-configuration/?utm_source=github&utm_medium=readme&utm_campaign=az-104-study-guide)
   - Must know: Creating a VM requires five choices: image, size, admin credentials, resource group, and region; the VM attaches to a network interface (NIC).
   - Must know: VM size families map to workloads — B and D are general purpose, F is compute optimized, and E is memory optimized; resizing to a size on different hardware requires stopping (deallocating) the VM.
 - [ ] **Provision and manage containers in the Azure portal**
-  <br>Skills outline section (AZ-104, as of April 17, 2026). Creating and managing an Azure Container Registry; provisioning containers by using Azure Container Instances and Azure Container Apps; managing sizing and scaling for containers, including Container Instances and Container Apps.
+  <br>Creating and managing an Azure Container Registry; provisioning containers by using Azure Container Instances and Azure Container Apps; managing sizing and scaling for containers, including Container Instances and Container Apps.
   - 📖 Lesson: [Provision and Manage Containers in Azure (AZ-104)](https://www.savemycert.com/revision/azure-administrator-associate/azure-containers-aci-container-apps/?utm_source=github&utm_medium=readme&utm_campaign=az-104-study-guide)
   - Must know: Azure Container Registry (ACR) is a private, managed registry that stores container images; ACI, Container Apps, and AKS pull from it.
   - Must know: ACR SKUs are Basic, Standard, and Premium; geo-replication and private endpoints are Premium-only, and a managed identity lets services pull images without stored credentials.
 - [ ] **Create and configure Azure App Service**
-  <br>Skills outline section (AZ-104, as of April 17, 2026). Provisioning an App Service plan and configuring its scaling; creating an App Service; configuring certificates and Transport Layer Security (TLS); mapping an existing custom DNS name; configuring backup, networking settings, and deployment slots for an App Service.
+  <br>Provisioning an App Service plan and configuring its scaling; creating an App Service; configuring certificates and Transport Layer Security (TLS); mapping an existing custom DNS name; configuring backup, networking settings, and deployment slots for an App Service.
   - 📖 Lesson: [Create and Configure Azure App Service (AZ-104)](https://www.savemycert.com/revision/azure-administrator-associate/azure-app-service-configuration/?utm_source=github&utm_medium=readme&utm_campaign=az-104-study-guide)
   - Must know: Azure App Service is a managed PaaS for web apps and APIs; every app runs on an App Service plan, which is the compute you pay for.
   - Must know: The plan's pricing tier (Free, Shared, Basic, Standard, Premium, Isolated) decides compute, whether apps share hardware, and which features are available.
@@ -118,18 +141,20 @@ Tick each topic off once you can explain it without notes. The "Must know" facts
 
 **Weight: 19%.** Virtual networks and subnets, secure network access, name resolution, and load balancing. Official weighting 15–20%.
 
+📝 Revision notes: [Domain 4: Implement and manage virtual networking](notes/domain-4-implement-and-manage-virtual-networking.md)
+
 - [ ] **Configure and manage virtual networks in Azure**
-  <br>Skills outline section (AZ-104, as of April 17, 2026). Creating and configuring virtual networks and subnets; creating and configuring virtual network peering; configuring public IP addresses; configuring user-defined routes; troubleshooting network connectivity.
+  <br>Creating and configuring virtual networks and subnets; creating and configuring virtual network peering; configuring public IP addresses; configuring user-defined routes; troubleshooting network connectivity.
   - 📖 Lesson: [Azure Virtual Networks, Subnets, Peering & User-Defined Routes](https://www.savemycert.com/revision/azure-administrator-associate/azure-virtual-networks-peering/?utm_source=github&utm_medium=readme&utm_campaign=az-104-study-guide)
   - Must know: Azure reserves five IP addresses in every subnet (network, gateway, two for DNS, broadcast), so a /24 yields 251 usable hosts.
   - Must know: VNet peering connects two VNets over the Microsoft backbone; regional peering is same-region and global peering spans regions.
 - [ ] **Configure secure access to virtual networks**
-  <br>Skills outline section (AZ-104, as of April 17, 2026). Creating and configuring network security groups (NSGs) and application security groups; evaluating effective security rules in NSGs; implementing Azure Bastion; configuring service endpoints and private endpoints for Azure platform as a service (PaaS).
+  <br>Creating and configuring network security groups (NSGs) and application security groups; evaluating effective security rules in NSGs; implementing Azure Bastion; configuring service endpoints and private endpoints for Azure platform as a service (PaaS).
   - 📖 Lesson: [Azure NSGs, Bastion, Service Endpoints & Private Endpoints](https://www.savemycert.com/revision/azure-administrator-associate/azure-nsg-bastion-private-endpoints/?utm_source=github&utm_medium=readme&utm_campaign=az-104-study-guide)
   - Must know: NSG rules use priority 100-4096 where a lower number means higher priority, and Azure stops at the first matching rule.
   - Must know: Every NSG rule is a 5-tuple: source, source port, destination, destination port, and protocol, with an allow or deny action.
 - [ ] **Configure name resolution and load balancing**
-  <br>Skills outline section (AZ-104, as of April 17, 2026). Configuring Azure DNS; configuring an internal or public load balancer; troubleshooting load balancing.
+  <br>Configuring Azure DNS; configuring an internal or public load balancer; troubleshooting load balancing.
   - 📖 Lesson: [Azure DNS and Load Balancer: AZ-104 Networking Guide](https://www.savemycert.com/revision/azure-administrator-associate/azure-dns-load-balancer/?utm_source=github&utm_medium=readme&utm_campaign=az-104-study-guide)
   - Must know: A public Azure DNS zone hosts a domain's records (A, CNAME, MX, TXT) and becomes authoritative once you delegate the domain by updating the name servers at the registrar.
   - Must know: A private DNS zone resolves VM names privately inside and between VNets via a virtual network link; enable autoregistration to have Azure create and remove VM A records automatically.
@@ -138,13 +163,15 @@ Tick each topic off once you can explain it without notes. The "Must know" facts
 
 **Weight: 14%.** Azure Monitor metrics, logs, and alerting, plus backup and disaster recovery. Official weighting 10–15%.
 
+📝 Revision notes: [Domain 5: Monitor and maintain Azure resources](notes/domain-5-monitor-and-maintain-azure-resources.md)
+
 - [ ] **Monitor resources in Azure**
-  <br>Skills outline section (AZ-104, as of April 17, 2026). Interpreting metrics in Azure Monitor; configuring log settings; querying and analyzing logs; setting up alert rules, action groups, and alert processing rules; configuring and interpreting monitoring of virtual machines, storage accounts, and networks by using Azure Monitor Insights; using Azure Network Watcher and Connection monitor.
+  <br>Interpreting metrics in Azure Monitor; configuring log settings; querying and analyzing logs; setting up alert rules, action groups, and alert processing rules; configuring and interpreting monitoring of virtual machines, storage accounts, and networks by using Azure Monitor Insights; using Azure Network Watcher and Connection monitor.
   - 📖 Lesson: [Azure Monitor: Metrics, Logs, Diagnostic Settings & Alerts (AZ-104)](https://www.savemycert.com/revision/azure-administrator-associate/azure-monitor-metrics-logs-alerts/?utm_source=github&utm_medium=readme&utm_campaign=az-104-study-guide)
   - Must know: Azure Monitor collects two fundamental data types: metrics (numeric, time-series, near real time) and logs (structured events queried with KQL).
   - Must know: Interpret metrics in Metrics Explorer using aggregations, filters, and splitting; metrics are collected automatically and need no query language.
 - [ ] **Implement backup and recovery**
-  <br>Skills outline section (AZ-104, as of April 17, 2026). Creating a Recovery Services vault and an Azure Backup vault; creating and configuring a backup policy; performing backup and restore operations by using Azure Backup; configuring Azure Site Recovery for Azure resources; performing a failover to a secondary region; configuring and interpreting reports and alerts for backups.
+  <br>Creating a Recovery Services vault and an Azure Backup vault; creating and configuring a backup policy; performing backup and restore operations by using Azure Backup; configuring Azure Site Recovery for Azure resources; performing a failover to a secondary region; configuring and interpreting reports and alerts for backups.
   - 📖 Lesson: [Azure Backup & Site Recovery: Vaults, Policies & Failover (AZ-104)](https://www.savemycert.com/revision/azure-administrator-associate/azure-backup-site-recovery/?utm_source=github&utm_medium=readme&utm_campaign=az-104-study-guide)
   - Must know: A Recovery Services vault holds Azure Backup for VMs, Azure Files, and in-VM SQL/SAP, and is the vault Azure Site Recovery uses; the newer Azure Backup vault covers modern workloads like Azure databases, blobs, and managed disks.
   - Must know: A backup policy is a schedule (how often backups run) plus retention (how long each recovery point is kept).
@@ -159,7 +186,7 @@ Tick each topic off once you can explain it without notes. The "Must know" facts
 
 ## Sample questions
 
-[sample-questions.md](sample-questions.md) has 5 worked AZ-104 questions with the answer, why each option is right or wrong, and the reasoning steps.
+[sample-questions.md](sample-questions.md) has 20 worked AZ-104 questions with the answer, why each option is right or wrong, and the reasoning steps.
 
 ## Free resources
 
